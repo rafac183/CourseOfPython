@@ -1,33 +1,35 @@
 frutas = ["manzana", "banana", "naranja"]
 
-for fruta in frutas:
-    print(fruta)
-    
-i = 0
-while i != 5:
-    i += 1
-    print(i)
-    
-a = 0
-while True:
-    print(a)
-    a += 1
-    
-    if a > 6:
+""" print(frutas[0])
+print(frutas[2])  
+print("\n")
+print(frutas[-1])
+print(frutas[-2])
+print(frutas[-3]) """
 
-        break
+""" #Agregar a lista
+frutas.append("pera")
+print(frutas)
 
-""" 
-range(fin)
-range(inicio, fin)
-range(inicio, fin, intervalo?) """
+#Agregar a lista en lugar especifico
+frutas.insert(1, "uva")
+print(frutas)
 
-        
-for i in range(10):
-    if i % 2 == 0:
-        continue
-    print(i) 
-    
-for i in range(5):
-    pass
-    
+#Eliminar de lista
+frutas.remove("banana")
+print(frutas)
+
+#Eliminar de lista en lugar especifico
+fruta_eliminada = frutas.pop(2)
+print(frutas)
+print(fruta_eliminada)
+
+frutas.sort()
+print(frutas)
+
+frutas.reverse()
+print(frutas) """
+
+numeros = [1,2,3,4,5]
+cuadrados = [x**2 for x in numeros if x % 3 == 0]
+print(cuadrados)
