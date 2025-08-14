@@ -1,9 +1,12 @@
-punto = (3, 4)
+persona = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
 
-tuplas = (1,2,3,2,4,2)
+print(persona["nombre"])
+print(persona["edad"])  
+print(persona["ciudad"])
 
-print (tuplas.count(2))
-print (len(tuplas))
-print (tuplas.index(2))
-print (tuplas.index(2, 4))
-print (tuplas.index(2, 2, 4))
+print(persona.keys())
+print(persona.values())
+print(persona.items())
+
+persona.update({"profesion": "Ingeniero"})
+print(persona)
