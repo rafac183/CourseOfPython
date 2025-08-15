@@ -1,18 +1,9 @@
-""" import math 
-#Raiz cuadrada
-resultado = math.sqrt(25)
-print(resultado) """
+from paquete import operaciones, utilidades
 
-""" from math import sqrt
-#Raiz cuadrada
-resultado = sqrt(25)
-print(resultado) """
 
-import random
-import datetime
+resultado = operaciones.suma(5, 3)
+utilidades.imprimir_mensaje(f"El resultado de la suma es: {resultado}")
 
-num_random = random.randint(1, 10)
-print(num_random)
 
-today = datetime.datetime.now()
-print(today)
+nombre = utilidades.obtener_nombre_usuario()
+utilidades.imprimir_mensaje(f"Hola, {nombre}!")
