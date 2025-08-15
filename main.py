@@ -1,21 +1,41 @@
-def saludo():
-    print("Hola mundo")
+""" try:
+    # Código que puede generar una excepción
+    resultado = 10 / 0  # División por cero
+    print(resultado)
+except ZeroDivisionError:
+    print("Error: División por cero")
     
-def saludo2(nombre):
-    print(f"Hola, {nombre}")
+try:
+    # Código que puede generar una excepción
+    resultado = 10 / 0  # División por cero
+    print(resultado)
+except ZeroDivisionError:
+    print("Error: División por cero")
+except ValueError:
+    print("Error: Valor inválido")
     
-#name = input("Indique su nombre:\n")
+try:
+    # Código que puede generar una excepción
+    archivo = open("archivo.txt", "r")
+    # Realizar operaciones con el archivo
+except FileNotFoundError:
+    print("Error: Archivo no encontrado")
+finally:
+    archivo.close()  # Cerrar el archivo siempre, incluso si ocurre una excepción """
 
-cuadrado = lambda x: x**2
-#print(cuadrado(5))
+def validar_edad(edad):
+    if edad < 0:
+        raise ValueError("La edad no puede ser negativa")
+    elif edad > 150:
+        raise ValueError("La edad no puede ser mayor a 150")
+    elif edad < 18:
+        raise Exception("Debes ser mayor de edad")
+    return True
 
-def area_rectangulo(base, altura):
-    return base * altura
-
-def suma(*nums):
-    total = 0
-    for num in nums:
-        total += num
-    return total
-print(suma(1,5,8))
-print(suma(5,2))
+# Uso
+try:
+    validar_edad(5)
+except ValueError as e:
+    print(f"Error de valor: {e}")
+except Exception as e:
+    print(f"Error general: {e}")
