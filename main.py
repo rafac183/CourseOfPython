@@ -1,20 +1,16 @@
-nombre = input("Ingresa tu nombre: ")
-edad = input("Ingresa tu edad: ")
+""" archivo = open("datos.txt", "r")
+contenido = archivo.read()
+print(contenido)
+archivo.close() """
 
+with open("datos.txt", "r") as archivo:
+    contenido = archivo.read()
+    print(contenido)
 
-print("Hola, " + nombre + "!")
-print("Tienes " + edad + " años.")
+""" archivo = open("datos.txt", "w")
+archivo.write("Hola, mundo!")
+archivo.close() """
 
-edad = int(input("Ingresa tu edad: "))
-
-
-if edad >= 18:
-    print("Eres mayor de edad.")
-else:
-    print("Eres menor de edad.")
-    
-nombre = "Juan"
-edad = 25
-
-
-print(f"Hola, mi nombre es {nombre} y tengo {edad} años.")
+""" archivo = open("datos.txt", "a")
+archivo.write("Hola rafael!")
+archivo.close() """
