@@ -13,3 +13,12 @@ print(punto[1])  # Imprime 4
 A diferencia de las listas, las tuplas son inmutables, lo que significa que no se pueden modificar una vez creadas. No se pueden agregar, eliminar o cambiar elementos en una tupla existente.
 
 Las tuplas son útiles cuando necesitas almacenar una colección de elementos que no deben modificarse, como coordenadas o datos de configuración.
+
+## **Funciones anónimas (lambda)**
+
+Python permite crear funciones anónimas o funciones lambda, que son funciones sin nombre definidas en una sola línea. Se utilizan comúnmente para funciones pequeñas y concisas.
+
+```
+cuadrado = lambda x: x ** 2  
+print(cuadrado(5))  # Imprime 25
+```
