@@ -1,16 +1,18 @@
-""" archivo = open("datos.txt", "r")
-contenido = archivo.read()
-print(contenido)
-archivo.close() """
+""" import math 
+#Raiz cuadrada
+resultado = math.sqrt(25)
+print(resultado) """
 
-with open("datos.txt", "r") as archivo:
-    contenido = archivo.read()
-    print(contenido)
+""" from math import sqrt
+#Raiz cuadrada
+resultado = sqrt(25)
+print(resultado) """
 
-""" archivo = open("datos.txt", "w")
-archivo.write("Hola, mundo!")
-archivo.close() """
+import random
+import datetime
 
-""" archivo = open("datos.txt", "a")
-archivo.write("Hola rafael!")
-archivo.close() """
+num_random = random.randint(1, 10)
+print(num_random)
+
+today = datetime.datetime.now()
+print(today)
