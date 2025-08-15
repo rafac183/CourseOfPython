@@ -1,0 +1,27 @@
+# Calculadora Interactiva en Python - Dependencias
+# ================================================
+
+# Este proyecto utiliza solo módulos de la biblioteca estándar de Python
+# No se requieren dependencias externas para la funcionalidad básica
+
+# Versión mínima de Python requerida
+# Python >= 3.7
+
+# Módulos de la biblioteca estándar utilizados:
+# - math: Para operaciones matemáticas avanzadas
+# - os: Para operaciones del sistema operativo
+# - sys: Para funcionalidades del sistema
+# - re: Para expresiones regulares
+# - time: Para funciones de tiempo
+# - uuid: Para generación de IDs únicos
+# - datetime: Para manejo de fechas y horas
+# - typing: Para type hints (Python 3.5+)
+
+# Nota: Todos estos módulos están incluidos en la instalación estándar de Python
+# y no requieren instalación adicional.
+
+# Para desarrollo (opcional):
+# pytest>=6.0.0          # Para testing
+# black>=21.0.0           # Para formateo de código
+# flake8>=3.8.0           # Para linting
+# mypy>=0.800             # Para verificación de tipos
