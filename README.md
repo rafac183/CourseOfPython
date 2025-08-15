@@ -173,8 +173,8 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ## 👨‍💻 Autor
 
 **Tu Nombre**
-- Email: tu.email@ejemplo.com
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
+- Email: rafac183antonio@gmail.com
+- GitHub: [@rafac183](https://github.com/rafac183)
 
 ## 🆘 Soporte
 
